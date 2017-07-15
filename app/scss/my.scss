@@ -1,0 +1,57 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.user-item {
+	font-family: sans-serif;
+	min-width: 352px;
+	float: left;
+	margin: 15px;
+	.avatar {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100px;
+		height: 100px;
+		float: left;
+		img {
+			border-radius: 50%;
+			width: 70px;
+			height: 70px;
+		}
+		.no-avatar {
+			color: white;
+			border-radius: 50%;
+			width: 70px;
+			height: 70px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	.info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		min-width: 250px;
+		min-height: 100px;
+		float: left;
+		.name {
+			font-weight: 900;
+			font-size: 25px;
+		}
+		.line {
+			width: 70px;
+			height: 2px;
+			background-color: blue;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+	}
+	@include clearfix;
+}

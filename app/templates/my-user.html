@@ -1,0 +1,11 @@
+<div class="user-item">
+	<div class="avatar">
+		<img ng-src="images/{{user.avatar}}" ng-show="user.useAvatar">
+		<div class="no-avatar" ng-hide="user.useAvatar" style="background-color: {{user.color}}"><span>{{user.initials}}</span></div>
+	</div>
+	<div class="info">
+		<div class="name">{{user.fname}} {{user.lname}}</div>
+		<div class="line"></div>
+		<div class="position">{{user.position}}</div>
+	</div>
+</div>

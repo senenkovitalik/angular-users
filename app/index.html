@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Angular-users</title>
+	<!-- build:css css/my.css -->
+	<link rel="stylesheet" type="text/css" href="css/my.css">
+	<!-- endbuild -->
+</head>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl">
+	<my-user user="x" ng-repeat="x in users"></my-user>
+</div>
+<!-- build:js js/libraries.js -->
+<script src="../node_modules/angular/angular.min.js"></script>
+<script src="../node_modules/chance/chance.js"></script>
+<!-- endbuild -->
+<!-- build:js js/my.js -->
+<script src="js/application.js"></script>
+<script src="js/myController.js"></script>
+<!-- endbuild -->
+</body>
+</html>

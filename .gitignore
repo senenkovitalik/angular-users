@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# Production build (dist directory)
+dist/
+
+# Compiled css
+app/css/
